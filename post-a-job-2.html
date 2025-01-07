@@ -52,14 +52,23 @@
   <main>
     <h1>Post a Job</h1>
     <form action="submit-job.php" method="post"> <!-- Update the action attribute as needed -->
-      <label for="job-title">Job Title:</label>
-      <input type="text" id="job-title" name="job-title" required>
+     <div class= "form-row">   
+         <div class="form-group">
+            <label for="job-title">Job Title:</label>
+            <div class="input-wrapper">
+                <i class="fa fa-briefcase"></i>
+                <input type="text" id="job-title" name="job-title" required>
+            </div>
+         </div>
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+     </div>
 
       <label for="name">Name:</label>
       <input type="text" id="name" name="name" required>
 
-      <label for="location">Location:</label>
-      <input type="text" id="location" name="location" required>
+      
 
       <label for="salary">Payment:</label>
       <input type="text" id="payment" name="payment">

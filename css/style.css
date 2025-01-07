@@ -1052,3 +1052,109 @@ https://templatemo.com/tm-516-known
 
   .list { font-size: 16px; line-height: 1.6; }
   .list li { margin-bottom: 15px;  }
+
+  form {
+    max-width: 600px; /* Limit width for better readability */
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a soft shadow */
+}
+
+form h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Match your website font */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Match the primary color of your site */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+    background-color: #007bff; /* Primary button color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+textarea {
+    resize: none; /* Disable resizing */
+    height: 100px; /* Set a fixed height */
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.input-wrapper input {
+    padding-left: 30px; /* Create space for the icon */
+}
+
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+input, textarea {
+    transition: box-shadow 0.3s ease;
+}
+
+button {
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+

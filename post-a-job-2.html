@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Post a Job | JobHive</title>
+     <link rel="stylesheet" href="css/style.css"> <!-- Ensure this path matches your CSS file -->
+</head>
+<body>
+     <header>
+     <section class="preloader">
+          <div class="spinner">
+               <span class="spinner-rotate"></span>
+          </div>
+     </section>
+  <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE  AND IMAGE-->
+                    <!-- LOGO IMAGE AND TEXT HERE -->
+                    <a href="#" class="navbar-brand"> 
+                         <img src="images\logo.png" alt="JobHive Logo" style="height: 80px; width: auto; vertical-align: middle;">
+                    </a>
+ 
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li class="active"><a href="index.html">Home</a></li>
+                         <li><a href="job-listing.html">Jobs</a></li>
+                         <li><a href="about-us.html">About Us</a></li>
+                         <li><a href="blog-posts.html">Blog</a></li>
+                         <li><a href="post-a-job-2.html">Post a Job</a></li>
+                         <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+                         
+    <!-- Include your navigation bar here -->
+     </header>
+  <main>
+    <h1>Post a Job</h1>
+    <form action="submit-job.php" method="post"> <!-- Update the action attribute as needed -->
+      <label for="job-title">Job Title:</label>
+      <input type="text" id="job-title" name="job-title" required>
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="salary">Payment:</label>
+      <input type="text" id="payment" name="payment">
+
+      <label for="job-description">Job Description:</label>
+      <textarea id="job-description" name="job-description" required></textarea>
+
+      <label for="application-email">Application Email:</label>
+      <input type="email" id="application-email" name="application-email" required>
+
+      <label for="application-phoen number">Phone Number:</label>
+      <input type="phone-number" id="phone-number" name="phone-number" required>
+
+      <button type="submit">Submit Job</button>
+    </form>
+  </main>
+  <footer>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <!-- <div class="section-title">
+                                   <h2>Headquarter</h2>
+                              </div>
+                              <address>
+                                   <p>212 Barrington Court <br>New York, ABC 10001</p>
+                              </address> -->
+
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+
+                              <!-- <div class="copyright-text"> 
+                                   <p>Copyright &copy; 2020 Company Name</p>
+                                   <p>Template by: <a href="https://www.phpjabbers.com/">PHPJabbers.com</a></p>
+                              </div> -->
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2>Contact Info</h2>
+                              </div>
+                              <address>
+                                   <p>+234 9079 796 761</p>
+                                   <p><a href="mailto:contact@company.com">contact@jobhive.com</a></p>
+                              </address>
+
+                              <div class="footer_menu">
+                                   <h2>Quick Links</h2>
+                                   <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about-us.html">About Us</a></li>
+                                        <li><a href="terms.html">Terms & Conditions</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                   </ul>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="footer-info newsletter-form">
+                              <div class="section-title">
+                                   <h2>Newsletter Signup</h2>
+                              </div>
+                              <div>
+                                   <div class="form-group">
+                                        <form action="#" method="get">
+                                             <input type="email" class="form-control" placeholder="Enter your email" name="email" id="email" required>
+                                             <input type="submit" class="form-control" name="submit" id="form-submit" value="Send me">
+                                        </form>
+                                        <span><sup>*</sup> Please note - we do not spam your email.</span>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+    <!-- Include your footer content here -->
+  </footer>
+</body>
+</html>

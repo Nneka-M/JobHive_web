@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
+     crossorigin="anonymous"></script>
      <title>Post a Job | JobHive</title>
+     <meta charset="UTF-8">
      <link rel="stylesheet" href="css/style.css"> <!-- Ensure this path matches your CSS file -->
+     
 </head>
-<body>
-     <header>
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
      <section class="preloader">
           <div class="spinner">
                <span class="spinner-rotate"></span>
@@ -47,7 +48,7 @@
 
                          
     <!-- Include your navigation bar here -->
-     </header>
+
   <main>
     <h1>Post a Job</h1>
     <form action="submit-job.php" method="post"> <!-- Update the action attribute as needed -->
@@ -75,9 +76,9 @@
       <button type="submit">Submit Job</button>
     </form>
   </main>
-  <footer>
-          <div class="container">
-               <div class="row">
+  <footer id="footer">
+       <div class="container">
+            <div class="row">
 
                     <div class="col-md-4 col-sm-6">
                          <div class="footer-info">
@@ -144,5 +145,10 @@
           </div>
     <!-- Include your footer content here -->
   </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 </html>

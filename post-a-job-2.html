@@ -63,7 +63,7 @@
 
   <main>
     <h1>Post a Job</h1>
-    <form action="submit-job.php" method="post"> <!-- Update the action attribute as needed -->
+    <form id="jobForm"> <!-- Update the action attribute as needed -->
      <div class= "form-row">   
          <div class="form-group">
             <label for="job-title">Job Title:</label>
@@ -180,26 +180,14 @@
   </div>
 
   <script>
-  // Select the modal and its elements
   const modal = document.getElementById("successModal");
   const closeModalButton = document.querySelector(".close");
-  const form = document.querySelector("form");
+  const form = document.getElementById("jobForm");
 
-  // Show the modal after form submission
   form.addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent the default form submission
 
-    // Optional: Validate required fields
-    const jobTitle = document.getElementById("job-title").value;
-    const location = document.getElementById("location").value;
-    const description = document.getElementById("job-description").value;
-
-    if (!jobTitle || !location || !description) {
-      alert("Please fill out all required fields!");
-      return;
-    }
-
-    // Show the modal
+    // Simulate successful submission
     modal.style.display = "block";
 
     // Clear the form fields
@@ -218,6 +206,7 @@
     }
   };
 </script>
+
 
 
 </body>

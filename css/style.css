@@ -1105,10 +1105,10 @@ button:hover {
     background-color: #0056b3;
 }
 
-textarea {
+/* textarea {
     resize: none; /* Disable resizing */
     height: 100px; /* Set a fixed height */
-}
+} */
 
 .form-row {
     display: flex;
